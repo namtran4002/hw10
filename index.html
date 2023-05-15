@@ -1,0 +1,276 @@
+
+<!-- 宣告文件類型為 HTML5 --><!-- Khai báo kiểu tài liệu là HTML5 -->
+<!DOCTYPE html>
+<html>
+
+<head>
+    <!-- 設定網頁標題為 "個人自我介紹網頁" Đặt tiêu đề trang web là "Trang giới thiệu cá nhân" -->
+    <title>個人自我介紹網頁</title>
+    <!-- 設定網頁在不同裝置上的顯示尺寸 -->
+    <!-- Đặt kích thước hiển thị trang web trên các thiết bị khác nhau -->
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- 引入 jQuery Mobile CSS 樣式表 Nhúng bảng kiểu CSS của jQuery Mobile -->
+    <link rel="stylesheet" href="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
+    <!-- 引入 jQuery 函式庫  Nhúng thư viện jQuery -->
+    <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+    <!-- 引入 jQuery Mobile 函式庫 Nhúng thư viện jQuery Mobile -->
+    <script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+</head>
+
+<body>
+    <!-- 主頁 Trang chủ -->
+    <div data-role="page" id="home">
+        <!-- 導覽列 Thanh điều hướng -->
+        <div data-role="navbar">
+            <ul>
+                <!-- 主頁選項，具有家圖標 Tùy chọn Trang chủ, có biểu tượng nhà -->
+                <li><a href="#home" data-transition="flip" class="ui-btn-active ui-state-persist" data-icon="home">主頁</a></li>
+                <!-- 興趣愛好選項，具有星星圖標 Tùy chọn Sở thích, có biểu tượng ngôi sao -->
+                <li><a href="#hobbies" data-transition="flip" data-icon="star">興趣愛好</a></li>
+                <!-- 學歷經歷選項，具有信息圖標 Tùy chọn Học vấn và kinh nghiệm, có biểu tượng thông tin -->
+                <li><a href="#experience" data-transition="flip" data-icon="info">學歷經歷</a></li>
+                <!-- 作業列表選項，具有網格圖標 Tùy chọn Danh sách công việc, có biểu tượng lưới -->
+                <li><a href="#assignments" data-transition="flip" data-icon="grid">作業列表</a></li>
+            </ul>
+        </div>
+        <!-- 頁頭 Tiêu đề trang -->
+        <div data-role="header">
+            <h1>個人自我介紹</h1>
+        </div>
+        <!-- 內容區 Khu vực nội dung -->
+        <div data-role="content">
+            <!-- 在這裡放置您的個人資訊 Đặt thông tin cá nhân của bạn ở đây -->
+            <h2>基本資訊</h2>
+            <!-- 列表視圖  Chế độ xem danh sách -->
+            <ul data-role="listview">
+                <li>
+                    <h3>姓名</h3>
+                    <p> 陳文雀 </p>
+                </li>
+                <li>
+                    <h3>性別</h3>
+                    <p>男</p>
+                </li>
+                <li>
+                    <h3>年齡</h3>
+                    <p>18歲</p>
+                </li>
+                <li>
+                    <h3>電子郵件</h3>
+                    <p>namtran08072004t@gmail.com</p>
+                </li>
+            </ul>
+        </div>
+        <!-- 頁腳  Chân trang -->
+        <div data-role="footer">
+            <h4>版權聲明</h4>
+        </div>
+    </div>
+
+
+    <!-- 興趣愛好 -->
+    <div data-role="page" id="hobbies">
+        
+            <!-- 導覽列 Thanh điều hướng -->
+        <div data-role="navbar">
+            <ul>
+                <!-- 主頁選項，具有家圖標 Tùy chọn Trang chủ, có biểu tượng nhà -->
+                <li><a href="#home" data-transition="fade"  data-icon="home">主頁</a></li>
+                <!-- 興趣愛好選項，具有星星圖標 Tùy chọn Sở thích, có biểu tượng ngôi sao -->
+                <li><a href="#hobbies" data-transition="fade" class="ui-btn-active ui-state-persist" data-icon="star">興趣愛好</a></li>
+                <!-- 學歷經歷選項，具有信息圖標 Tùy chọn Học vấn và kinh nghiệm, có biểu tượng thông tin -->
+                <li><a href="#experience" data-transition="fade" data-icon="info">學歷經歷</a></li>
+                <!-- 作業列表選項，具有網格圖標 Tùy chọn Danh sách công việc, có biểu tượng lưới -->
+                <li><a href="#assignments"data-transition="fade" data-icon="grid">作業列表</a></li>
+            </ul>
+        </div>
+    <!-- 頁頭 Tiêu đề trang -->
+        <div data-role="header">
+            <h1>興趣愛好選項</h1>
+        </div>
+        <!-- 內容區 Khu vực nội dung -->
+        <div data-role="content">
+            <!-- 在這裡放置您的個人資訊 Đặt thông tin cá nhân của bạn ở đây -->
+            <h2>我的喜歡</h2>
+            <!-- 列表視圖  Chế độ xem danh sách -->
+            <ul data-role="listview">
+                <li>
+                    <h3>活動</h3>
+                    <p>足球</p>
+                </li>
+                <li>
+                    <h3>活動</h3>
+                    <p>爬山</p>
+                </li>
+                <li>
+                    <h3>飲料</h3>
+                    <p>可樂</p>
+                </li>
+                <li>
+                    <h3>旅行</h3>
+                    <p>日本</p>
+                </li>
+            </ul>
+        </div>
+        <!-- 頁腳  Chân trang -->
+        <div data-role="footer">
+            <h4>版權聲明</h4>
+        </div>
+    </div>
+
+
+
+    <!-- 學歷經歷 -->
+    <div data-role="page" id="experience">
+        
+<!-- 導覽列 Thanh điều hướng -->
+        <div data-role="navbar">
+            <ul>
+                <!-- 主頁選項，具有家圖標 Tùy chọn Trang chủ, có biểu tượng nhà -->
+                <li><a href="#home" data-transition="pop"  data-icon="home">主頁</a></li>
+                
+                <!-- 興趣愛好選項，具有星星圖標 Tùy chọn Sở thích, có biểu tượng ngôi sao -->
+                <li><a href="#hobbies" data-transition="pop"  data-icon="star">興趣愛好</a></li>
+                <!-- 學歷經歷選項，具有信息圖標 Tùy chọn Học vấn và kinh nghiệm, có biểu tượng thông tin -->
+                <li><a href="#experience" data-transition="pop" class="ui-btn-active ui-state-persist" data-icon="info">學歷經歷</a></li>
+                <!-- 作業列表選項，具有網格圖標 Tùy chọn Danh sách công việc, có biểu tượng lưới -->
+                <li><a href="#assignments" data-transition="pop"  data-icon="grid">作業列表</a></li>
+                
+                </ul>
+            </ul>
+        </div>
+        <!-- 頁頭 Tiêu đề trang -->
+        <div data-role="header">
+            <h1>學歷經歷選項</h1>
+        </div>
+        <!-- 內容區 Khu vực nội dung -->
+        <div data-role="content">
+            <!-- 在這裡放置您的個人資訊 Đặt thông tin cá nhân của bạn ở đây -->
+            <h2>我的學習</h2>
+            <!-- 列表視圖  Chế độ xem danh sách -->
+            <ul data-role="listview">
+                <li>
+                    <h3>1級</h3>
+                    <p>Long Xuyen</p>
+                </li>
+                <li>
+                    <h3>2級</h3>
+                    <p>Long Xuyen</p>
+                </li>
+                <li>
+                    <h3>高中</h3>
+                    <p>Binh Giang</p>
+                </li>
+                <li>
+                    <h3>大學</h3>
+                    <p>景文科技大學</p>
+                </li>
+            </ul>
+        </div>
+        <!-- 頁腳  Chân trang -->
+        <div data-role="footer">
+            <h4>版權聲明</h4>
+        </div>
+    </div>
+
+    <!-- 作業列表頁 Trang Danh sách công việc -->
+    <div data-role="page" id="assignments">
+        <!-- 導覽列 Thanh điều hướng -->
+        <div data-role="navbar">
+            <ul>
+                <!-- 主頁選項，具有家圖標 Tùy chọn Trang chủ, có biểu tượng nhà -->
+                <li><a href="#home" data-transition="slidefade" data-icon="home">主頁</a></li>
+                <!-- 興趣愛好選項，具有星星圖標 Tùy chọn Sở thích, có biểu tượng ngôi sao -->
+                <li><a href="#hobbies" data-transition="slidefade" data-icon="star">興趣愛好</a></li>
+                <!-- 學歷經歷選項，具有信息圖標 Tùy chọn Học vấn kinh nghiệm, có biểu tượng thông tin -->
+                <li><a href="#experience" data-transition="slidefade" data-icon="info">學歷經歷</a></li>
+                <!-- 作業列表選項，具有網格圖標 Tùy chọn Danh sách công việc, có biểu tượng lưới -->
+                <li><a href="#assignments" data-transition="slidefade" class="ui-btn-active ui-state-persist" data-icon="grid">作業列表</a></li>
+            </ul>
+        </div>
+        <!-- 頁頭 Tiêu đề trang -->
+        <div data-role="header">
+            <h1>作業列表</h1>
+        </div>
+        <!-- 內容區 Khu vực nội dung -->
+        <div data-role="content">
+            <!-- 下拉式選單標籤 Nhãn menu xổ xuống -->
+            <label for="select-choice-1" class="select">選擇作業:</label>
+            <!-- 下拉式選單 Menu xổ xuống -->
+            <select name="select-choice-1" id="select-choice-1" data-native-menu="false">
+                <option value="#">請選擇</option>
+                <option value=" https://namtran4002.github.io/hw1/">作業1</option>
+                <option value=" https://namtran4002.github.io/hw2//">作業2</option>
+                <option value=" https://namtran4002.github.io/hw3/">作業3</option>
+                <option value=" https://namtran4002.github.io/hw4/">作業4</option>
+                <option value=" https://namtran4002.github.io/hw5/">作業5</option>
+                <option value=" https://namtran4002.github.io/hw6/">作業6</option>
+                <option value=" https://namtran4002.github.io/hw7/">作業7</option>
+                <option value=" https://namtran4002.github.io/hw8/">作業8</option>
+            </select>
+            <!-- 作業內容顯示區域 Khu vực hiển thị nội dung công việc -->
+            <div id="assignment-content"></div>
+        </div>
+        <!-- 頁腳 Chân trang -->
+        <div data-role="footer">
+            <h4>版權聲明</h4>
+        </div>
+    </div>
+    <script>
+        // 當文件已加載完成 Khi tài liệu đã sẵn sàng
+        $(document).ready(function () {
+            // 當選擇作業的下拉式選單值變化時 Khi giá trị của menu xổ xuống thay đổi
+            $("#select-choice-1").on("change", function () {
+                // 將選擇的作業鏈接設為iframe的src，並將其顯示在assignment-content區域
+                // Hiển thị nội dung công việc trong khung iframe
+                $("#assignment-content").html(
+                    '<iframe src="' +
+                    $(this).val() +
+                    '" width="100%" height="500px"></iframe>'
+                );
+            });
+        });
+    </script>
+      <script>
+
+        $(document).on('pageinit', 'home', function(){
+          console.log('特定頁面初始化完畢！');
+        });
+        </script>
+        <script>
+        
+        $(document).ready(function () {
+            var pageArray = ["#home", "#hobbies", "#experience", "#assignments"];
+            var currentPageIndex = 0;
+            $(document).on("swipeleft", ".ui-page", function () {
+                currentPageIndex = (currentPageIndex + 1) % pageArray.length;
+                $.mobile.navigate(pageArray[currentPageIndex]);
+            })
+            $(document).on("swiperight", ".ui-page", function () {
+                currentPageIndex = (currentPageIndex - 1 + pageArray.length) % pageArray.length;
+                $.mobile.navigate(pageArray[currentPageIndex]);
+            });
+        });
+        
+        
+        
+        
+        </script>
+        <script>
+        $(document).on("scrollstart",function(){
+          console.log("開始捲動");
+        });
+        </script>
+        <script>
+        $(document).on("scrollstop",function(){
+          console.log("停止捲動");
+        });
+        </script>
+          <script>  
+        $(document).on("mobileinit", function(){
+          // 在這裡覆寫 jQuery Mobile 默認設定
+          $.mobile.defaultPageTransition = 'slide';
+        });
+        </script> 
+</body>
+</html>
